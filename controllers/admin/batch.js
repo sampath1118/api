@@ -18,6 +18,7 @@ const _post = (req, res) => {
     approved_by: "",
     reason: "",
     remarks: "",
+    createdAt: req.body.createdAt,
   };
   model
     .find(req.body)
